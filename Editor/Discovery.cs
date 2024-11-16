@@ -6,7 +6,7 @@
 
 using System.Collections.Generic;
 using System.IO;
-using UnityEngine;
+
 
 namespace Microsoft.Unity.VisualStudio.Editor
 {
@@ -25,7 +25,6 @@ namespace Microsoft.Unity.VisualStudio.Editor
 		{
 			try
 			{
-				Debug.Log(editorPath);
 				if (VisualStudioWindsurfInstallation.TryDiscoverInstallation(editorPath, out installation))
 					return true;
 				if (VisualStudioCodiumInstallation.TryDiscoverInstallation(editorPath, out installation))
