@@ -1,5 +1,5 @@
 {
-    "name": "Unity.VisualStudio.Editor",
+    "name": "Unity.Windsurf.Editor",
     "references": [],
     "includePlatforms": [
         "Editor"

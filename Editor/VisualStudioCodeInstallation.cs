@@ -132,7 +132,7 @@ namespace Microsoft.Unity.VisualStudio.Editor
 			installation = new VisualStudioCodeInstallation()
 			{
 				IsPrerelease = isPrerelease,
-				Name = "Windsurfer" + (isPrerelease ? " - Insider" : string.Empty) + (version != null ? $" [{version.ToString(3)}]" : string.Empty),
+				Name = "Windsurf" + (isPrerelease ? " - Insider" : string.Empty) + (version != null ? $" [{version.ToString(3)}]" : string.Empty),
 				Path = editorPath,
 				Version = version ?? new Version()
 			};
