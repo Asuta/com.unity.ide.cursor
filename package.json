@@ -1,6 +1,6 @@
 {
-  "name": "com.unity.ide.windsurf",
-  "displayName": "Windsurf Editor",
+  "name": "com.unity.ide.windsurf.editor",
+  "displayName": "Windsurf Code Editor",
   "description": "Windsurf editor integration for supporting Windsurf as code editor for unity. Adds support for generating csproj files for intellisense purposes, auto discovery of installations, etc.",
   "version": "2.0.22",
   "unity": "2019.4",
