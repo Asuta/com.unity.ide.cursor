@@ -132,7 +132,7 @@ namespace Microsoft.Unity.VisualStudio.Editor
 			installation = new VisualStudioCodeInstallation()
 			{
 				IsPrerelease = isPrerelease,
-				Name = "Visual Studio Code" + (isPrerelease ? " - Insider" : string.Empty) + (version != null ? $" [{version.ToString(3)}]" : string.Empty),
+				Name = "Windsurfer" + (isPrerelease ? " - Insider" : string.Empty) + (version != null ? $" [{version.ToString(3)}]" : string.Empty),
 				Path = editorPath,
 				Version = version ?? new Version()
 			};
@@ -150,17 +150,17 @@ namespace Microsoft.Unity.VisualStudio.Editor
 
 			foreach (var basePath in new[] {localAppPath, programFiles})
 			{
-				candidates.Add(IOPath.Combine(basePath, "Microsoft VS Code", "Code.exe"));
+
 				candidates.Add(IOPath.Combine(basePath, "Microsoft VS Code Insiders", "Code - Insiders.exe"));
 			}
 #elif UNITY_EDITOR_OSX
 			var appPath = IOPath.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles));
-			candidates.AddRange(Directory.EnumerateDirectories(appPath, "Visual Studio Code*.app"));
+			candidates.AddRange(Directory.EnumerateDirectories(appPath, "Windsurf*.app"));
 #elif UNITY_EDITOR_LINUX
 			// Well known locations
-			candidates.Add("/usr/bin/code");
-			candidates.Add("/bin/code");
-			candidates.Add("/usr/local/bin/code");
+			candidates.Add("/usr/bin/windsurf");
+			candidates.Add("/bin/windsurf");
+			candidates.Add("/usr/local/bin/windsurf");
 
 			// Preference ordered base directories relative to which desktop files should be searched
 			candidates.AddRange(GetXdgCandidates());
